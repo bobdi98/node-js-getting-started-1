@@ -17,7 +17,7 @@ app.get('/', function(request, response) {
 	var client = new net.Socket();
 	client.connect(10000, 'localhost', function() {
 		console.log('Conneted here on socket');
-		client.write('Hello b, server! Love, Satya Client.');
+		client.write('Hello b, server! Love, 1 Satya Client.');
 	});
 
 	client.on('data', function(data) {
