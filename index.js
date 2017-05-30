@@ -11,13 +11,13 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 app.get('/', function(request, response) {
-console.log('req received')
+/*console.log('req received')
 var io2 = require('socket.io-client');
 var socket2 = io2.connect('http://73.241.218.246:8080');
 
 var msg2 = "hello, this is satya!";
 socket2.emit('foo', msg2);
-
+*/
 console.log('req complete')
 	response.render('pages/index');
 });
